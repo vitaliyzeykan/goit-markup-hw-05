@@ -394,6 +394,10 @@ p {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-items:not(:last-child) {
   margin-right: 30px;
@@ -405,9 +409,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .clients-icon {
   fill: #afb1b8;
@@ -416,13 +418,13 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-items:hover,
+.clients-items:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-items:hover .clients-icon,
+.clients-items:focus .clients-icon {
   fill: #2196f3;
 }
 
